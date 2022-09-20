@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!-- Bases: Ambroisen body part (medieval tech) -->
+
+<ThingDef Name="AmbroisenMed" ParentName="BodyPartBase" Abstract="True">
+    	<tradeTags>
+         	<li>Ambroisen</li>
+	</tradeTags>
+	<thingCategories>	
+		<li>BodyPartsSimple</li>
+	</thingCategories>
+	<graphicData>
+		<texPath>Things/Item/BodyPart/AmbroisenProsthesis</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.80</drawSize>		
+		<shaderType>CutoutComplex</shaderType>
+	</graphicData>
+	<statBases>
+		<WorkToMake>16000</WorkToMake>
+	</statBases>
+	<recipeMaker>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+         	<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<researchPrerequisite>AmbroisenLimbs</researchPrerequisite>
+		<recipeUsers>
+			<li>DankPyon_Workbench</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+        		<Crafting>10</Crafting>
+		</skillRequirements>
+		<unfinishedThingDef>UnfinishedProsthesis</unfinishedThingDef>
+      </recipeMaker>
+</ThingDef>
+ 
+
+<!-- Added body parts -->
+ 
+ <!-- Ambroisen Hand -->
+
+<ThingDef ParentName="AmbroisenMed">
+	<defName>AmbroisenMedHand</defName>
+	<label>Ambroisen Hand</label>
+	<description>An Ambroisen hand. Imbued with arcane power that makes it function indentical to a natural body part.</description>
+	<costList>
+		<Steel>70</Steel>
+		<DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+		<Gold>2</Gold>
+		<Silver>15</Silver>
+		<DankPyon_Emerald>5</DankPyon_Emerald>
+	</costList>
+</ThingDef>
+
+ <!-- Ambroisen Arm -->
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedArm</defName>
+      <label>Ambroisen arm</label>
+      <description>An Ambroisen arm. Imbued with arcane power that makes it function indentical to a natural body part.</description>
+      <costList>
+         <Steel>115</Steel>
+		 <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
+		 <Gold>3</Gold>
+		 <Silver>20</Silver>
+		 <DankPyon_Emerald>15</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>6</Mass>
+      </statBases>
+   </ThingDef>
+
+ <!-- Ambroisen Leg -->   
+
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedLeg</defName>
+      <label>Ambroisen leg</label>
+      <description>An Ambroisen leg. Imbued with arcane power that makes it function indentical to a natural body part.</description>
+      <costList>
+         <Steel>115</Steel>
+		 <DankPyon_ComponentBasic>15</DankPyon_ComponentBasic>
+		 <Gold>3</Gold>
+		 <Silver>20</Silver>
+		 <DankPyon_Emerald>15</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>8</Mass>
+      </statBases>
+   </ThingDef>
+
+ <!-- Ambroisen Foot -->
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedFoot</defName>
+      <label>Ambroisen foot</label>
+      <description>An Ambroisen foot. Imbued with arcane power that makes it function indentical to a natural body part.</description>
+      <costList>
+         <Steel>70</Steel>
+		 <DankPyon_ComponentBasic>10</DankPyon_ComponentBasic>
+		 <Gold>2</Gold>
+		 <Silver>15</Silver>
+		 <DankPyon_Emerald>5</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>2</Mass>
+      </statBases>
+   </ThingDef>
+
+ <!-- Ambroisen Toe -->
+   
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedToe</defName>
+      <label>Ambroisen toe</label>
+      <description>An Ambroisen toe. Imbued with arcane power that makes it function indentical to a natural body part.</description>
+      <costList>
+         <Steel>25</Steel>
+		 <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+		 <DankPyon_Emerald>2</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+
+ <!-- Ambroisen Finger -->   
+
+    <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedFinger</defName>
+      <label>Ambroisen finger</label>
+      <description>An Ambroisen finger. Imbued with arcane power that makes it function indentical to a natural body part.</description>
+      <costList>
+         <Steel>25</Steel>
+		 <DankPyon_ComponentBasic>5</DankPyon_ComponentBasic>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+		 <DankPyon_Emerald>2</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>0.2</Mass>
+      </statBases>
+   </ThingDef>
+   
+ <!-- Ambroisen Nose -->
+
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedNose</defName>
+      <label>Ambroisen nose</label>
+      <description>An Ambroisen nose. Imbued with arcane power that makes it function almost on par with a natural body part.</description>
+      <costList>
+         <Steel>20</Steel>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+		 <DankPyon_Emerald>1</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>0.6</Mass>
+      </statBases>
+   </ThingDef>
+
+ <!-- Ambroisen Eye -->
+   
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedEye</defName>
+      <label>Ambroisen eye</label>
+      <description>An Ambroisen eye. Imbued with arcane power that makes it function almost on par with a natural body part.</description>
+      <costList>
+         <Steel>20</Steel>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+		 <DankPyon_Emerald>5</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>0.6</Mass>
+      </statBases>
+   </ThingDef>
+   
+   <ThingDef ParentName="AmbroisenMed">
+      <defName>AmbroisenMedEar</defName>
+      <label>Ambroisen ear</label>
+      <description>An Ambroisen ear. Imbued with arcane power that makes it function almost on par with a natural body part.</description>
+      <costList>
+         <Steel>20</Steel>
+		 <Gold>1</Gold>
+		 <Silver>5</Silver>
+	         <DankPyon_Emerald>1</DankPyon_Emerald>
+      </costList>
+      <statBases>
+         <Mass>0.6</Mass>
+      </statBases>
+   </ThingDef>   
+   
+   </Defs>
