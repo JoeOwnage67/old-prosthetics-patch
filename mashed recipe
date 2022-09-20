@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>...</defName>
+		<label>...</label>
+		<description>...</description>
+		<jobString>...</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<!-- Probably not needed unless you increase the required count of alcohol above 1, possibly for a bulk version
+			<allowMixingIngredients>true</allowMixingIngredients>
+			-->
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ale</li>
+						<li>Cider</li>
+						<li>Beer</li>
+						<!-- If you want to support other mods without messing with xpath patches -->
+						<!-- MayRequire="packageId of mod" -->
+						<li MayRequire="SirMashedPotato.MorrowRim.AlcoholRemade">MorrowRim_CyrodiilicBrandy</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineEarlyMedievalMM</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<!-- You want to add everything that could be an ingredient in here, so the player can disable/enable specific things selectively -->
+			<thingDefs>
+				<li>Ale</li>
+				<li>Cider</li>
+				<li>Beer</li>
+				<li>Cloth</li>
+				<li>MedicineEarlyMedievalMM</li>
+				<li MayRequire="SirMashedPotato.MorrowRim.AlcoholRemade">MorrowRim_CyrodiilicBrandy</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<productDefName>1</productDefName>
+		</products>
+	</RecipeDef>
+</Defs>
