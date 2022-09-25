@@ -306,3 +306,39 @@
 							</costList>
                     				</value>
 				</li>
+
+---------------------------------------------------------------------------------------------
+
+
+<!-- replace steel to iron for neolithic -->
+				<li Class="PatchOperationSetName">
+					<xpath>Defs/ThingDef[@ParentName="Basic" or @ParentName="ArtificialMed"]/costList/Steel</xpath>
+						<name>DankPyon_IronIngot</name>
+				</li>
+			
+<!-- Change recipes for Ambroisen Prosthetics to include Emerald-->
+										
+				<li Class="PatchOperationAdd">
+                    			<xpath>Defs/ThingDef[defName="AmbroisenMedHand" or defName="AmbroisenMedFoot" or defName="AmbroisenMedEye"]/costList</xpath>
+                    				<value>
+                        				<DankPyon_Emerald>5</DankPyon_Emerald>
+                    				</value>
+               			</li>
+				<li Class="PatchOperationAdd">
+                    			<xpath>Defs/ThingDef[defName="AmbroisenMedLeg" or defName="AmbroisenMedArm"]/costList</xpath>
+                    				<value>
+                        				<DankPyon_Emerald>15</DankPyon_Emerald>
+                    				</value>
+               			</li>
+        			<li Class="PatchOperationAdd">
+                    			<xpath>Defs/ThingDef[defName="AmbroisenMedFinger" or defName="AmbroisenMedToe"]/costList</xpath>
+                    				<value>
+                        				<DankPyon_Emerald>2</DankPyon_Emerald>
+                    				</value>
+               			</li>
+				<li Class="PatchOperationAdd">
+                    			<xpath>Defs/ThingDef[defName="AmbroisenMedEar" or defName="AmbroisenMedNose"]/costList</xpath>
+                    				<value>
+                        				<DankPyon_Emerald>1</DankPyon_Emerald>
+                    				</value>
+               			</li>
